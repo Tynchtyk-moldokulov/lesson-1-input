@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --black-color:#000000;
+    --white-color:#ffffff;
+    
+}
+
+body{
+    font-family: "Shadows Into Light", cursive;
+    color: var(--white-color);
+    background-color: rgba(89, 131, 252, 1);
+    background-image: linear-gradient(36deg, rgba(89, 131, 252, 1) 0%, rgba(29, 74, 103, 1) 46%);
+}
+
+.header{
+    background-color: black;
+    height: 100px;
+    padding-top: 35px;
+    margin-bottom: 20px;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-flex ul{
+    color: azure;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    font-size: 25px;
+}
+
+.header-flex li{
+    transition: 0.5s ;
+}
+@media (hover){
+    .header-flex ul li:hover{
+    color: darkblue;
+    cursor: pointer;
+    /* font-size: 30px;
+    transition: 0.5s; */
+}
+}
+
+
+.cards{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card{
+    background-color: var(--black-color);
+    border-radius: 12px;
+    height: auto;
+    overflow: hidden;
+}
+
+.card img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.card h2{
+    text-align: center;
+    padding: 0 10px;
+}
+.card p{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+.card div{
+    border: 1px solid var(--white-color);
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+@media (max-width: 800px){
+.card h2{
+    font-size: 20px;
+}
+.header{
+    height: 80px;
+    padding-top: 25px;
+    margin-bottom: 15px;
+}
+
+.header-flex ul{
+    font-size: 20px;
+}
+.card p{
+    font-size: 15px;
+}
+.card img{
+    height: 50%;
+    width: 100%;
+}
+.cards{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 500px){
+    .card h2{
+        font-size: 20px;
+    }
+    .header{
+        height: 60px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .header-flex ul{
+        font-size: 15px;
+    }
+    .card p{
+        font-size: 25px;
+    }
+    .card img{
+        height: 50%;
+        width: 100%;
+    }
+    .cards{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }  
+}
+footer{
+    color: white;
+
+}
+.footer{
+    text-align: center;
+    padding: left 20px; ;
+    padding-top:30px ;
+    padding: bottom 30px; ;
+    padding: right 20px; ;
+}
